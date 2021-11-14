@@ -19,7 +19,7 @@ body {
 h1 {
     text-align: center;
     color:black;
-    background-color: rgb(255, 228, 207);
+    background-color:#EEEBE8;
     line-height: 200%;
 } 
 
@@ -35,7 +35,7 @@ ul li a{
 }
 
 #contenedor_formulario{
-    background-color:rgb(255, 228, 207);
+    background-color: #EEEBE8;
     color: black;
     opacity: 0.8;
     padding: 20px;
