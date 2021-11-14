@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="\Users\camil\OneDrive\Escritorio\Universidad\ProgramacionIV\tareaUno\multimedia\imagenes\icono.png"  type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+    <!--conexion con css-->
+    <link href="diseño.css" rel="stylesheet" id="text/css">
+    <!--Etiqueta usada para colocar el autor de la página web-->
+    <meta name='author' content='Camila, ALisom'>
+    <!--Etiqueta usada para colocar las palabras con las cuales se indexara la página y se podrá encontrar por google-->
+    <meta name='keywords' content='Maria Camila Rueda Cano, Alison Melisa Jimenez Naranjo'>
+    <!--Etiqueta usada para decirle al navegador que se usarán el tipo de codificación utf-8 o para caracteres especiales-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--Etiqueta usada para colocar el nombre en la pestaña del navegador web-->
+    <title>Trabajo final 9 React JS</title>
+    <!--Etiqueta usada para dar una descripción de la página web-->
+    <meta name="description" content="Trabajo final 9 React JS">
+ 
+  </head>
+  <body>
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
+
+// 0. guardado de datos simple
+const data = {
+  title_1: "Hoja de Vida de Camila y Alison",
+  subtittle: "Informacion Personal",
+  text: "Nombre:",
+  text_1: "Apellido:",
+  text_2: "Edad:",
+  text_3: "ALison",
+  text_4: "Camila",
+  text_5: "Jimenez",
+  text_6: "21", 
+  subtittle_2: "Informacion de perfil",
+  text_7: "Perfil",
+  text_8: "Estudiante",
+  text_9: "Idioma",
+  text_10: "Español",
+  text_11:"camilarueda715@gmail.com",
+  text_12: "alisonjimnes86@gmail.com",
+  text_13: "3136646819",
+  text_14: "3117193973",
+  text_15: "cra 17 #62-35 apto 501b la tostaca",
+  text_16: "cra A #41-50 Barrio Palonegro"
+
+}
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const descriptiom = <h4>{data.des}</h4>
+const copyright = <h3>{data.copi}</h3>
+
+const element = (
+  <div>
+    {title_x}
+    {descriptiom}
+    {audio}
+    {copyright}
+  </div>
+);
+
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
+  </body>
+</html>
