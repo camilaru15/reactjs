@@ -60,7 +60,16 @@ const data = {
 
 
 // 1.
-const title_x = <h1><img src="assets/AlisonMelisa.png" height="20%" width="20%"/>{data.title_1}</h1>;
+const title_x = <h1><img src="assets/MariaCamila.png" height="20%" width="20%"/>{data.title_1}</h1>;
+const foto_de_perfil = <img src="assets/perfilCamila.jpeg" height="23%" width="23%" border id="fotoDePerfil" />
+const boton = <div>
+  <button width="50%" height="50%">
+    <a href="index.html">Alison</a>
+  </button>
+  <button width="50%" height="50%">
+    <a href="index2.html" >Camila</a>
+  </button>  
+</div>
 const subtitle_x=<h2><b>{data.subtittle}</b></h2>;
 const text_x =<ul>
 <dt><b>{data.text}</b>{data.text_3}</dt>
@@ -79,11 +88,21 @@ const footer =<ul>
 
 const element = (
   <div>
-   {title_x}
-   {subtitle_x}
-   {text_x}
-   {text_1x}
-   {footer}
+    <div id="header"> 
+      {title_x}
+      {boton}
+    </div>
+    <div id="columna1">
+      {subtitle_x}  
+      {text_x}
+      {text_1x}
+    </div>
+    <div id="columna2">
+      {foto_de_perfil}
+    </div>
+   <div id="footer">
+      {footer}
+    </div>   
   </div>
 );
 
